@@ -1,0 +1,249 @@
+version: 1.2.4
+
+cache: false
+
+interface:
+  customWelcome: "Olá {{user.name}}"
+  # Privacy policy settings
+  privacyPolicy:
+    externalUrl: 'https://xablau.com/privacy'
+    openNewTab: true
+
+  # Terms of service
+  termsOfService:
+    externalUrl: 'https://xablau.com/tos'
+    openNewTab: true
+    modalAcceptance: true
+    modalTitle: "Termos e Condições"
+    modalContent: |
+       #Termos de Serviço da Plataforma de Chat com IA
+     
+
+        1. Licença de Uso do Código do Painel de Administração
+
+        Ao adquirir um pacote específico que inclua essa funcionalidade, você recebe uma licença limitada para baixar e utilizar o código-fonte fornecido, exclusivamente para acessar um painel de administração relacionado à Plataforma. Embora você tenha o direito de usar este código conforme licenciado, fica expressamente proibida a revenda, redistribuição, sublicenciamento ou qualquer outra forma de transferência deste código para terceiros sem nossa permissão prévia e explícita por escrito. A titularidade e os direitos de propriedade intelectual sobre o código permanecem conosco ou com nossos licenciadores.
+
+        2. Coleta e Uso de Dados Pessoais
+
+        Para fornecer e aprimorar nossos Serviços, processar transações e manter a comunicação com você, coletamos dados pessoais como nome, endereço de e-mail e informações de pagamento. A forma como coletamos, usamos e protegemos seus dados está detalhada em nossa Política de Privacidade, a qual recomendamos a leitura atenta.
+
+        3. Cookies e Tecnologias Semelhantes
+
+        Nossa Plataforma utiliza cookies e outras tecnologias similares para melhorar a sua experiência de usuário, analisar o tráfego e o uso dos Serviços, e habilitar certas funcionalidades. Ao continuar a usar a Plataforma, você concorda com o uso de cookies de acordo com as práticas descritas em nossa Política de Privacidade.
+
+        4. Conduta do Usuário e Uso Aceitável
+
+        Você concorda em utilizar a Plataforma apenas para fins lícitos e de forma a não violar leis, regulamentos ou os direitos de terceiros. É proibido usar os Serviços de maneira que possa restringir ou inibir o uso e aproveitamento da Plataforma por outros usuários. Comportamentos inadequados incluem, mas não se limitam a: assédio, envio de conteúdo ofensivo, obsceno ou ilegal, ou qualquer ação que interrompa ou prejudique o funcionamento normal dos Serviços.
+
+        5. Legislação Aplicável
+
+        Estes Termos serão regidos e interpretados de acordo com as leis da jurisdição aplicável onde nossa entidade está registrada, sem consideração a conflitos de princípios legais que possam direcionar a aplicação da lei de outra jurisdição.
+
+        6. Alterações nos Termos
+
+        Reservamo-nos o direito de modificar estes Termos a qualquer momento, a nosso exclusivo critério. Notificaremos os usuários sobre quaisquer alterações significativas através do endereço de e-mail fornecido ou por meio de um aviso destacado na Plataforma. O uso continuado da Plataforma após a notificação e publicação das alterações constituirá sua aceitação tácita dos Termos revisados.
+
+        7. Contato
+
+        Se você tiver alguma dúvida ou precisar de esclarecimentos sobre estes Termos de Serviço, por favor, entre em contato conosco através dos canais de comunicação oficiais indicados em nossa Plataforma.
+
+        Aceitação dos Termos
+
+        Ao utilizar a Plataforma de Chat com IA, você reconhece que leu, compreendeu e concorda em cumprir estes Termos de Serviço.    
+
+
+  endpointsMenu: true
+  modelSelect: true
+  parameters: false
+  sidePanel: true
+  presets: false
+  prompts: true
+  bookmarks: true
+  multiConvo: true
+  agents: false
+  runCode: false
+
+balance:
+  enabled: false
+  startBalance: 20000
+  autoRefillEnabled: false
+  refillIntervalValue: 10
+  refillIntervalUnit: 'minutes'
+  refillAmount: 50000
+
+speech:
+  tts:
+    openai:      
+      apiKey: '${TTS_API_KEY}'
+      model: 'gpt-4o-mini-tts'
+      voices: ['alloy', 'echo', 'fable', 'onyx', 'nova', 'shimmer']
+
+
+  stt:
+    openai:      
+      apiKey: '${STT_API_KEY}'
+      model: 'whisper-1'
+
+rateLimits:
+  fileUploads:
+    ipMax: 50
+    ipWindowInMinutes: 60
+    userMax: 50
+    userWindowInMinutes: 60
+  conversationsImport:
+    ipMax: 50
+    ipWindowInMinutes: 60
+    userMax: 50
+    userWindowInMinutes: 60
+  stt:
+    ipMax: 50
+    ipWindowInMinutes: 1
+    userMax: 50
+    userWindowInMinutes: 1
+  tts:
+    ipMax: 50
+    ipWindowInMinutes: 1
+    userMax: 50
+    userWindowInMinutes: 1
+
+endpoints: 
+  custom:    
+    - name: "ChatGPT"
+      apiKey: "dummy"
+      baseURL: "${PORTKEY_GATEWAY_URL}"
+      headers:
+        x-portkey-api-key: "${PORTKEY_API_KEY}"
+        x-portkey-virtual-key: "openrouter-d3ccde"
+        x-portkey-metadata: '{"_user": "${USER_EMAIL}"}'
+        x-portkey-debug: "false"
+      models:
+        default: 
+          - "openai/gpt-4o-mini-search-preview"
+          - "openai/gpt-4o-mini"          
+        fetch: false
+      titleConvo: true      
+      summarize: false
+      summaryModel: "current_model"
+      forcePrompt: false      
+      titleModel: 'google/gemini-2.0-flash-001'
+      dropParams: ['stop']    
+      iconURL: https://unpkg.com/@lobehub/icons-static-svg@latest/icons/openai.svg
+
+    - name: "Deepseek"
+      apiKey: "dummy"
+      baseURL: "${PORTKEY_GATEWAY_URL}"
+      headers:
+        x-portkey-api-key: "${PORTKEY_API_KEY}"
+        x-portkey-virtual-key: "openrouter-d3ccde"
+        x-portkey-metadata: '{"_user": "${USER_EMAIL}"}'
+        x-portkey-debug: "false"
+      models:
+       default: 
+        - "deepseek/deepseek-chat"
+        - "deepseek/deepseek-r1"
+       fetch: false
+      titleConvo: true      
+      summarize: false
+      summaryModel: "current_model"
+      forcePrompt: false      
+      titleModel: 'google/gemini-2.0-flash-001'
+      dropParams: ['stop'] 
+
+    - name: "Gemini"
+      apiKey: "dummy"
+      baseURL: "${PORTKEY_GATEWAY_URL}"
+      headers:
+        x-portkey-api-key: "${PORTKEY_API_KEY}"
+        x-portkey-virtual-key: "openrouter-d3ccde"
+        x-portkey-metadata: '{"_user": "${USER_EMAIL}"}'
+        x-portkey-debug: "false"
+      models:
+       default: 
+        - "google/gemini-2.5-flash-preview"
+        - "google/gemini-2.5-flash-preview:thinking"        
+        - "google/gemma-3-27b-it"
+       fetch: false
+      titleConvo: true      
+      summarize: false
+      summaryModel: "current_model"
+      forcePrompt: false      
+      titleModel: 'google/gemini-2.0-flash-001'
+      dropParams: ['stop'] 
+      iconURL: https://unpkg.com/@lobehub/icons-static-svg@1.45.0/icons/gemini-color.svg
+    
+
+fileConfig:
+  endpoints:    
+    default:
+      fileLimit: 4
+      fileSizeLimit: 10  
+      totalSizeLimit: 50 
+      supportedMimeTypes:    
+      - "text/x-c"
+      - "text/x-c\\+\\+"      
+      - "text/html"
+      - "text/x-java"      
+      - "text/markdown"
+      - "application/pdf"
+      - "text/x-php"      
+      - "text/javascript"
+      - "text/x-python"
+      - "text/x-script.python"
+      - "text/x-ruby"
+      - "text/x-tex"
+      - "text/plain"
+      - "text/css"      
+      - "text/vtt"
+      - "image/jpeg"      
+      - "image/gif"
+      - "image/png"
+      - "image/svg"
+      - "image/svg+xml"
+      - "application/csv"
+      - "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+      - "application/json"
+      - "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+      - "application/typescript"
+      - "application/xml"      
+      - "application/vnd.ms-excel"
+      - "application/msexcel"
+      - "application/x-msexcel"
+      - "application/x-ms-excel"
+      - "application/x-excel"
+      - "application/x-dos_ms_excel"
+      - "application/xls"
+      - "application/x-xls"
+      - "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      - "text/csv"
+      - "text/comma-separated-values"
+      - "text/x-comma-separated-values"
+      - "text/tab-separated-values"
+      - "text/x-csv"
+  serverFileSizeLimit: 100  # Global server file size limit in MB
+  avatarSizeLimit: 2  # Limit for user avatar image size in MB
+
+
+modelSpecs:
+ prioritize: false
+ list:
+  - name: "deepseek/deepseek-chat"
+    label: "Deepseek"
+    default: true
+    description: "Talk to xing"
+    iconURL: "https://unpkg.com/@lobehub/icons-static-svg@1.45.0/icons/anthropic.svg"
+    preset:
+      endpoint: "Deepseek"
+      modelLabel: "Customer Support Bot"
+      greeting: "This assistant creates with you."
+      append_current_datetime: true
+  - name: "openai/gpt-4o-mini"
+    label: "Mini"
+    default: true
+    description: "Talk to xing"
+    iconURL: "https://unpkg.com/@lobehub/icons-static-svg@1.45.0/icons/anthropic.svg"
+    preset:
+      endpoint: "ChatGPT"
+      modelLabel: "Customer Support Bot"
+      greeting: "This assistant creates with you."
+      append_current_datetime: true
+
