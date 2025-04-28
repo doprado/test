@@ -234,7 +234,7 @@ modelSpecs:
     preset:
       endpoint: "Deepseek"
       modelLabel: "Customer Support Bot"
-      greeting: "This assistant creates with you."
+      greeting: "Este assistente foi personalizado para você conversar com seus PDFs"
       append_current_datetime: true
   - name: "openai/gpt-4o-mini"
     label: "Mini"
