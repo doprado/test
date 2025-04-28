@@ -246,8 +246,7 @@ modelSpecs:
       modelLabel: "GPT-4o Mini"
       greeting: "Este o modelo é excelente para maioria das tarefas"
       append_current_datetime: true
-
-	- name: "google/gemini-2.5-flash-preview"
+  - name: "google/gemini-2.5-flash-preview"
     label: "Gemini 2.0 Flash"
     default: true
     description: "Facilite sua rotina"
