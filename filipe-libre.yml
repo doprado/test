@@ -233,8 +233,8 @@ modelSpecs:
     iconURL: "https://unpkg.com/@lobehub/icons-static-svg@1.45.0/icons/anthropic.svg"
     preset:
       endpoint: "Deepseek"
-      modelLabel: "Deepseek SiaChat"
-      greeting: "Este assistente foi personalizado para você conversar com seus PDFs"
+      modelLabel: "Deepseek sia.chat"
+      greeting: "Este é o modelo mais preciso para programação"
       append_current_datetime: true
   - name: "openai/gpt-4o-mini"
     label: "Mini"
@@ -243,7 +243,7 @@ modelSpecs:
     iconURL: "https://unpkg.com/@lobehub/icons-static-svg@1.45.0/icons/anthropic.svg"
     preset:
       endpoint: "ChatGPT"
-      modelLabel: "ChatGPT SiaChat"
-      greeting: "This assistant creates with you."
+      modelLabel: "ChatGPT sia.chat"
+      greeting: "Este o modelo mais popular para uso em geral"
       append_current_datetime: true
 
