@@ -230,7 +230,7 @@ modelSpecs:
     label: "Deepseek"
     default: true
     description: "Mais inteligente"
-    iconURL: "https://app.unpkg.com/@lobehub/icons-static-svg@1.45.0/files/icons/deepseek.svg"
+    iconURL: "https://unpkg.com/@lobehub/icons-static-svg@1.45.0/icons/deepseek.svg"
     preset:
       endpoint: "Deepseek"
       modelLabel: "Deepseek"
@@ -240,7 +240,7 @@ modelSpecs:
     label: "GPT-4o Mini"
     default: true
     description: "Excelente para maioria das tarefas"
-    iconURL: "https://app.unpkg.com/@lobehub/icons-static-svg@1.45.0/files/icons/openai.svg"
+    iconURL: "https://unpkg.com/@lobehub/icons-static-svg@1.45.0/icons/openai.svg"
     preset:
       endpoint: "ChatGPT"
       modelLabel: "GPT-4o Mini"
