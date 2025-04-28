@@ -146,7 +146,7 @@ endpoints:
       summarize: false
       summaryModel: "current_model"
       forcePrompt: false      
-      titleModel: 'google/gemini-2.0-flash-001'
+      titleModel: 'Deepseek'
       dropParams: ['stop'] 
 
     - name: "Gemini"
