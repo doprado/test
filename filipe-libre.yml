@@ -246,14 +246,14 @@ modelSpecs:
       modelLabel: "GPT-4o Mini"
       greeting: "Este o modelo é excelente para maioria das tarefas"
       append_current_datetime: true
-   - name: "google/gemini-2.5-flash-preview"
-     label: "Gemini 2.0 Flash"
-     default: true
-     description: "Facilite sua rotina"
-     iconURL: "https://unpkg.com/@lobehub/icons-static-svg@1.46.0/icons/gemini.svg"
-     preset:
-       endpoint: "Gemini"
-       modelLabel: "Gemini 2.0 Flash"
-       greeting: "O modelo mais leve do Google"
-       append_current_datetime: true  
 
+	- name: "google/gemini-2.5-flash-preview"
+    label: "Gemini 2.0 Flash"
+    default: true
+    description: "Facilite sua rotina"
+    iconURL: "https://unpkg.com/@lobehub/icons-static-svg@1.46.0/icons/gemini.svg"
+    preset:
+      endpoint: "Gemini"
+      modelLabel: "Gemini 2.0 Flash"
+      greeting: "Este é o modelo mais popular do Google"
+      append_current_datetime: true
