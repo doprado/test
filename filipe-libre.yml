@@ -230,20 +230,20 @@ modelSpecs:
     label: "Deepseek"
     default: true
     description: "Mais inteligente"
-    iconURL: "https://unpkg.com/@lobehub/icons-static-svg@1.45.0/icons/anthropic.svg"
+    iconURL: "https://app.unpkg.com/@lobehub/icons-static-svg@1.45.0/files/icons/deepseek.svg"
     preset:
       endpoint: "Deepseek"
-      modelLabel: "Deepseek sia.chat"
-      greeting: "Este é o modelo mais preciso para programação"
+      modelLabel: "Deepseek"
+      greeting: "Este é o modelo mais rápido e leve"
       append_current_datetime: true
   - name: "openai/gpt-4o-mini"
-    label: "Mini"
+    label: "GPT-4o Mini"
     default: true
-    description: "Mais rápido"
-    iconURL: "https://unpkg.com/@lobehub/icons-static-svg@1.45.0/icons/anthropic.svg"
+    description: "Excelente para maioria das tarefas"
+    iconURL: "https://app.unpkg.com/@lobehub/icons-static-svg@1.45.0/files/icons/openai.svg"
     preset:
       endpoint: "ChatGPT"
-      modelLabel: "ChatGPT sia.chat"
-      greeting: "Este o modelo mais popular para uso em geral"
+      modelLabel: "GPT-4o Mini"
+      greeting: "Este o modelo é excelente para maioria das tarefas"
       append_current_datetime: true
 
