@@ -238,7 +238,7 @@ modelSpecs:
       append_current_datetime: true
   - name: "openai/gpt-4o-mini"
     label: "GPT-4o Mini"
-    default: true
+    default: false
     description: "Excelente para maioria das tarefas"
     iconURL: "https://unpkg.com/@lobehub/icons-static-svg@1.45.0/icons/openai.svg"
     preset:
@@ -246,4 +246,15 @@ modelSpecs:
       modelLabel: "GPT-4o Mini"
       greeting: "Este o modelo é excelente para maioria das tarefas"
       append_current_datetime: true
+   - name: "google/gemini-2.5-flash-preview"
+    label: "Gemini 2.0 Flash"
+    default: false
+    description: "Facilite sua rotina"
+    iconURL: "https://unpkg.com/@lobehub/icons-static-svg@1.46.0/icons/gemini.svg"
+    preset:
+      endpoint: "Gemini"
+      modelLabel: "Gemini 2.0 Flash"
+      greeting: "O modelo mais leve do Google"
+      append_current_datetime: true
+   
 
