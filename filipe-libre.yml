@@ -55,7 +55,7 @@ interface:
   prompts: true
   bookmarks: true
   multiConvo: true
-  agents: true
+  agents: false
   runCode: false
 
 balance:
@@ -106,13 +106,6 @@ rateLimits:
     userWindowInMinutes: 1
 
 endpoints:
-  agents:
-    disableBuilder: false
-    recursionLimit: 10
-    maxRecursionLimit: 15
-    allowedProviders:
-    - azureOpenAI
-    capabilities: [ "chain" ]
   custom:
     - name: "ChatGPT"
       apiKey: "dummy"
