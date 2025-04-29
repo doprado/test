@@ -55,7 +55,7 @@ interface:
   prompts: true
   bookmarks: true
   multiConvo: true
-  agents: false
+  agents: true
   runCode: false
 
 balance:
