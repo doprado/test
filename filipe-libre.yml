@@ -105,70 +105,70 @@ rateLimits:
     userMax: 50
     userWindowInMinutes: 1
 
-endpoints:
-  custom:
-    - name: "ChatGPT"
-      apiKey: "dummy"
-      baseURL: "${PORTKEY_GATEWAY_URL}"
-      headers:
-        x-portkey-api-key: "${PORTKEY_API_KEY}"
-        x-portkey-virtual-key: "openrouter-d3ccde"
-        x-portkey-metadata: '{"_user": "${USER_EMAIL}"}'
-        x-portkey-debug: "false"
-      models:
-        default: ["openai/gpt-4o-mini"]
-        fetch: false
-      titleConvo: true
-      summarize: false
-      summaryModel: "current_model"
-      forcePrompt: false
-      titleModel: "openai/gpt-4o-mini"
-      modelDisplayLabel: "ChatGPT"
-      dropParams:
-        - "stop"
-      iconURL: "https://unpkg.com/@lobehub/icons-static-svg@latest/icons/openai.svg"
+# endpoints:
+#   custom:
+#     - name: "ChatGPT"
+#       apiKey: "dummy"
+#       baseURL: "${PORTKEY_GATEWAY_URL}"
+#       headers:
+#         x-portkey-api-key: "${PORTKEY_API_KEY}"
+#         x-portkey-virtual-key: "openrouter-d3ccde"
+#         x-portkey-metadata: '{"_user": "${USER_EMAIL}"}'
+#         x-portkey-debug: "false"
+#       models:
+#         default: ["openai/gpt-4o-mini"]
+#         fetch: false
+#       titleConvo: true
+#       summarize: false
+#       summaryModel: "current_model"
+#       forcePrompt: false
+#       titleModel: "openai/gpt-4o-mini"
+#       modelDisplayLabel: "ChatGPT"
+#       dropParams:
+#         - "stop"
+#       iconURL: "https://unpkg.com/@lobehub/icons-static-svg@latest/icons/openai.svg"
 
-    - name: "Deepseek"
-      apiKey: "dummy"
-      baseURL: "${PORTKEY_GATEWAY_URL}"
-      headers:
-        x-portkey-api-key: "${PORTKEY_API_KEY}"
-        x-portkey-virtual-key: "openrouter-d3ccde"
-        x-portkey-metadata: '{"_user": "${USER_EMAIL}"}'
-        x-portkey-debug: "false"
-      models:
-        default:
-          - "deepseek/deepseek-chat"
-        fetch: false
-      titleConvo: true
-      summarize: false
-      summaryModel: "current_model"
-      forcePrompt: false
-      titleModel: "deepseek/deepseek-chat"
-      modelDisplayLabel: "Deepseek Xablau"
-      dropParams:
-        - "stop"
+#     - name: "Deepseek"
+#       apiKey: "dummy"
+#       baseURL: "${PORTKEY_GATEWAY_URL}"
+#       headers:
+#         x-portkey-api-key: "${PORTKEY_API_KEY}"
+#         x-portkey-virtual-key: "openrouter-d3ccde"
+#         x-portkey-metadata: '{"_user": "${USER_EMAIL}"}'
+#         x-portkey-debug: "false"
+#       models:
+#         default:
+#           - "deepseek/deepseek-chat"
+#         fetch: false
+#       titleConvo: true
+#       summarize: false
+#       summaryModel: "current_model"
+#       forcePrompt: false
+#       titleModel: "deepseek/deepseek-chat"
+#       modelDisplayLabel: "Deepseek Xablau"
+#       dropParams:
+#         - "stop"
 
-    - name: "Gemini"
-      apiKey: "dummy"
-      baseURL: "${PORTKEY_GATEWAY_URL}"
-      headers:
-        x-portkey-api-key: "${PORTKEY_API_KEY}"
-        x-portkey-virtual-key: "openrouter-d3ccde"
-        x-portkey-metadata: '{"_user": "${USER_EMAIL}"}'
-        x-portkey-debug: "false"
-      models:
-        default: ["google/gemini-2.5-flash-preview"]
-        fetch: false
-      titleConvo: true
-      summarize: true
-      summaryModel: "current_model"
-      forcePrompt: false
-      titleModel: "google/gemini-2.5-flash-preview"
-      modelDisplayLabel: "Gemini"
-      dropParams:
-        - "stop"
-      iconURL: "https://unpkg.com/@lobehub/icons-static-svg@1.45.0/icons/gemini-color.svg"
+#     - name: "Gemini"
+#       apiKey: "dummy"
+#       baseURL: "${PORTKEY_GATEWAY_URL}"
+#       headers:
+#         x-portkey-api-key: "${PORTKEY_API_KEY}"
+#         x-portkey-virtual-key: "openrouter-d3ccde"
+#         x-portkey-metadata: '{"_user": "${USER_EMAIL}"}'
+#         x-portkey-debug: "false"
+#       models:
+#         default: ["google/gemini-2.5-flash-preview"]
+#         fetch: false
+#       titleConvo: true
+#       summarize: true
+#       summaryModel: "current_model"
+#       forcePrompt: false
+#       titleModel: "google/gemini-2.5-flash-preview"
+#       modelDisplayLabel: "Gemini"
+#       dropParams:
+#         - "stop"
+#       iconURL: "https://unpkg.com/@lobehub/icons-static-svg@1.45.0/icons/gemini-color.svg"
 
     # - name: "Muito mais IA's"
     #   apiKey: "dummy"
@@ -333,6 +333,8 @@ fileConfig:
 
 modelSpecs:
   prioritize: true
+  addedEndpoints:
+    - openAI
   list:
     - name: "deepseek/deepseek-chat"
       label: "Deepseek"
