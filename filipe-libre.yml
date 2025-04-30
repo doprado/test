@@ -116,15 +116,14 @@ endpoints:
         x-portkey-metadata: '{"_user": "${USER_EMAIL}"}'
         x-portkey-debug: "false"
       models:
-        default:
-          - "openai/gpt-4o-mini-search-preview"
-          - "openai/gpt-4o-mini"
+        default: ["openai/gpt-4o-mini-search-preview","openai/gpt-4o-mini"]
         fetch: false
       titleConvo: true
       summarize: false
       summaryModel: "current_model"
       forcePrompt: false
-      titleModel: "google/gemini-2.0-flash-001"
+      titleModel: "openai/gpt-4o-mini"
+      modelDisplayLabel: "ChatGPT"
       dropParams:
         - "stop"
       iconURL: "https://unpkg.com/@lobehub/icons-static-svg@latest/icons/openai.svg"
@@ -146,7 +145,8 @@ endpoints:
       summarize: false
       summaryModel: "current_model"
       forcePrompt: false
-      titleModel: "Deepseek"
+      titleModel: "deepseek/deepseek-chat"
+      modelDisplayLabel: "Deepseek"
       dropParams:
         - "stop"
 
