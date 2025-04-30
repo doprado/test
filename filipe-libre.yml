@@ -159,16 +159,14 @@ endpoints:
         x-portkey-metadata: '{"_user": "${USER_EMAIL}"}'
         x-portkey-debug: "false"
       models:
-        default:
-          - "google/gemini-2.5-flash-preview"
-          - "google/gemini-2.5-flash-preview:thinking"
-          - "google/gemma-3-27b-it"
+        default: ["google/gemini-2.5-flash-preview","google/gemini-2.5-flash-preview:thinking","google/gemma-3-27b-it"]
         fetch: false
       titleConvo: true
       summarize: false
       summaryModel: "current_model"
       forcePrompt: false
-      titleModel: "google/gemini-2.0-flash-001"
+      titleModel: "google/gemini-2.5-flash-preview"
+      modelDisplayLabel: "Gemini"
       dropParams:
         - "stop"
       iconURL: "https://unpkg.com/@lobehub/icons-static-svg@1.45.0/icons/gemini-color.svg"
