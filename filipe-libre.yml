@@ -333,8 +333,6 @@ fileConfig:
 
 modelSpecs:
   prioritize: true
-  addedEndpoints:
-    - openAI
   list:
     - name: "deepseek/deepseek-chat"
       label: "Deepseek"
