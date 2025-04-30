@@ -146,7 +146,7 @@ endpoints:
       summaryModel: "current_model"
       forcePrompt: false
       titleModel: "deepseek/deepseek-chat"
-      modelDisplayLabel: "Deepseek"
+      modelDisplayLabel: "Deepseek Xablau"
       dropParams:
         - "stop"
 
