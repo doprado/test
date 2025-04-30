@@ -279,7 +279,7 @@ endpoints:
       forcePrompt: false      
       titleModel: 'google/gemini-2.5-flash-preview'
       dropParams: ['stop']  
-      iconURL: "https://unpkg.com/@lobehub/icons-static-svg@1.45.0/icons/ai360.svg"       
+      iconURL: "https://unpkg.com/@lobehub/icons-static-svg@1.45.0/icons/stability-color.svg"       
     
 
 fileConfig:
