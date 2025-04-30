@@ -170,7 +170,7 @@ endpoints:
         - "stop"
       iconURL: "https://unpkg.com/@lobehub/icons-static-svg@1.45.0/icons/gemini-color.svg"
 
-    - name: "Muito mais IA's"
+    - name: "Outros modelos"
       apiKey: "dummy"
       baseURL: "${PORTKEY_GATEWAY_URL}"
       headers:
@@ -277,8 +277,9 @@ endpoints:
       summarize: false
       summaryModel: "current_model"
       forcePrompt: false      
-      titleModel: 'google/gemini-2.0-flash-001'
-      dropParams: ['stop']         
+      #titleModel: ''
+      dropParams: ['stop']  
+      iconURL: "https://app.unpkg.com/@lobehub/icons-static-svg@1.45.0/files/icons/ai360.svg"       
     
 
 fileConfig:
