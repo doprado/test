@@ -127,6 +127,7 @@ endpoints:
       dropParams:
         - "stop"
       iconURL: "https://unpkg.com/@lobehub/icons-static-svg@latest/icons/openai.svg"
+      userIdQuery: true
 
     - name: "Deepseek"
       apiKey: "dummy"
@@ -148,6 +149,7 @@ endpoints:
       modelDisplayLabel: "Deepseek"
       dropParams:
         - "stop"
+      userIdQuery: true  
 
     - name: "Gemini"
       apiKey: "dummy"
@@ -169,6 +171,7 @@ endpoints:
       dropParams:
         - "stop"
       iconURL: "https://unpkg.com/@lobehub/icons-static-svg@1.45.0/icons/gemini-color.svg"
+      userIdQuery: true
 
     - name: "Mais modelos"
       apiKey: "dummy"
@@ -279,7 +282,8 @@ endpoints:
       forcePrompt: false      
       titleModel: 'google/gemini-2.5-flash-preview'
       dropParams: ['stop']  
-      iconURL: "https://unpkg.com/@lobehub/icons-static-svg@1.45.0/icons/stability-color.svg"       
+      iconURL: "https://unpkg.com/@lobehub/icons-static-svg@1.45.0/icons/stability-color.svg"
+      userIdQuery: true       
     
 
 fileConfig:
