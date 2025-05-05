@@ -275,6 +275,8 @@ endpoints:
           - "mistralai/mistral-7b-instruct-v0.2"
           - "cognitivecomputations/dolphin-mixtral-8x7b"
           - "meta-llama/llama-2-70b-chat"
+          - "moonshotai/kimi-vl-a3b-thinking:free"
+          - "microsoft/phi-4-reasoning-plus:free"
           fetch: false
       titleConvo: true      
       summarize: false
