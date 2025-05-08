@@ -232,8 +232,6 @@ endpoints:
       headers:
         x-portkey-api-key: "${PORTKEY_API_KEY}"
         x-portkey-config: "pc-sia-de-b68369"
-        x-portkey-metadata: '{"_user": "${USER_EMAIL}"}'
-        x-portkey-debug: "false"
       models:
         default: ["llama-3.2"]
         fetch: true
