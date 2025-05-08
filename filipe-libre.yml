@@ -233,7 +233,7 @@ endpoints:
         x-portkey-api-key: "${PORTKEY_API_KEY}"
         x-portkey-config: "pc-sia-de-b68369"
         x-portkey-metadata: '{"_user": "${USER_EMAIL}"}'        
-        x-portkey-debug: "false"
+        x-portkey-debug: "true"
       models:
         default: 
         - "google/gemini-2.5-flash-preview"
@@ -244,7 +244,7 @@ endpoints:
       summarize: false
       summaryModel: "current_model"
       forcePrompt: false
-      modelDisplayLabel: "Portkey:Llama"     
+   
     
 
 fileConfig:
