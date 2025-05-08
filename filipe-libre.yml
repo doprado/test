@@ -227,11 +227,11 @@ endpoints:
       userIdQuery: true
 
     - name: "Portkey"
-      apikey: "dummy"
+      apiKey: "dummy"
       baseURL: ${PORTKEY_GATEWAY_URL}
       headers:
         x-portkey-api-key: "${PORTKEY_API_KEY}"
-        x-portkey-config: "pc-sia-de-b68369"
+        x-portkey-config: pc-sia-de-b68369"
       models:
         default: ["llama-3.2"]
         fetch: true
@@ -240,8 +240,7 @@ endpoints:
       summarize: false
       summaryModel: "current_model"
       forcePrompt: false
-      modelDisplayLabel: "Portkey:Llama"
-      iconURL: https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/rjqy7ghvjoiu4cd1xjbf      
+      modelDisplayLabel: "Portkey:Llama"     
     
 
 fileConfig:
