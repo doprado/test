@@ -231,7 +231,7 @@ endpoints:
       baseURL: ${PORTKEY_GATEWAY_URL}
       headers:
         x-portkey-api-key: "${PORTKEY_API_KEY}"
-        x-portkey-config: pc-sia-de-b68369"
+        x-portkey-config: "pc-libre-xxx"
       models:
         default: ["llama-3.2"]
         fetch: true
