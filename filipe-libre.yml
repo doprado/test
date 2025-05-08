@@ -230,8 +230,10 @@ endpoints:
       apikey: "dummy"
       baseURL: ${PORTKEY_GATEWAY_URL}
       headers:
-        x-portkey-api-key: "w/QlccxjTR1R7jvUo9wJNwpqtyeb"
+        x-portkey-api-key: "${PORTKEY_API_KEY}"
         x-portkey-config: "pc-sia-de-b68369"
+        x-portkey-metadata: '{"_user": "${USER_EMAIL}"}'
+        x-portkey-debug: "false"
       models:
         default: ["llama-3.2"]
         fetch: true
@@ -241,24 +243,7 @@ endpoints:
       summaryModel: "current_model"
       forcePrompt: false
       modelDisplayLabel: "Portkey:Llama"
-      iconURL: https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/rjqy7ghvjoiu4cd1xjbf    
-      
-    - name: "Portkey2"
-      apikey: "dummy"
-      baseURL: ${PORTKEY_GATEWAY_URL}
-      headers:
-        x-portkey-api-key: "feyo/XW3mPUTGfCIk5fPLjjVntuN"
-        x-portkey-config: "pc-sia-de-b68369"
-      models:
-        default: ["llama-3.2"]
-        fetch: true
-      titleConvo: true
-      titleModel: "current_model"
-      summarize: false
-      summaryModel: "current_model"
-      forcePrompt: false
-      modelDisplayLabel: "Portkey2:Llama"
-      iconURL: https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/rjqy7ghvjoiu4cd1xjbf       
+      iconURL: https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/rjqy7ghvjoiu4cd1xjbf      
     
 
 fileConfig:
