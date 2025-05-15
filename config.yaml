@@ -1,0 +1,5 @@
+litellm_settings:
+  cache: true 
+  cache_params:        
+    type: redis
+    namespace: "litellm.caching.caching"
