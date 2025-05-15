@@ -3,6 +3,7 @@ litellm_settings:
   cache: True 
   cache_params:        
     type: redis
+    namespace: "litellm.caching"
     supported_call_types: []
 general_settings:
   store_model_in_db: True
