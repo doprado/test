@@ -1,6 +1,6 @@
 version: 1.2.4
 
-cache: false
+cache: true
 
 interface:
   customWelcome: "Olá {{user.name}}"
