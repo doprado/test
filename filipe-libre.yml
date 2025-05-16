@@ -1,6 +1,6 @@
 version: 1.2.4
 
-cache: true
+cache: false
 
 interface:
   customWelcome: "Olá {{user.name}}"
@@ -109,7 +109,8 @@ endpoints:
       summarize: false
       summaryModel: "current_model"
       forcePrompt: false      
-      titleModel: 'openai/gpt-4o-mini'
+      titleModel: 'google/gemini-2.0-flash-001'
+      dropParams: ['stop']
       iconURL: https://unpkg.com/@lobehub/icons-static-svg@latest/icons/openai.svg
 
     - name: "Deepseek"
@@ -129,7 +130,8 @@ endpoints:
       summarize: false
       summaryModel: "current_model"
       forcePrompt: false      
-      titleModel: 'openai/gpt-4o-mini'
+      titleModel: 'google/gemini-2.0-flash-001'
+      dropParams: ['stop']
 
     - name: "Gemini"
       apiKey: "dummy"
@@ -150,7 +152,8 @@ endpoints:
       summarize: false
       summaryModel: "current_model"
       forcePrompt: false      
-      titleModel: 'openai/gpt-4o-mini'
+      titleModel: 'google/gemini-2.0-flash-001'
+      dropParams: ['stop']
       iconURL: https://unpkg.com/@lobehub/icons-static-svg@1.45.0/icons/gemini-color.svg
 
 
@@ -171,7 +174,8 @@ endpoints:
       summarize: false
       summaryModel: "current_model"
       forcePrompt: false      
-      titleModel: 'openai/gpt-4o-mini'
+      titleModel: 'google/gemini-2.0-flash-001'
+      dropParams: ['stop']
       iconURL: https://unpkg.com/@lobehub/icons-static-svg@1.45.0/icons/anthropic.svg
 
     - name: "Mais modelos"
@@ -315,7 +319,8 @@ endpoints:
       summarize: false
       summaryModel: "current_model"
       forcePrompt: false      
-      titleModel: 'openai/gpt-4o-mini'      
+      titleModel: 'google/gemini-2.0-flash-001'
+      dropParams: ['stop']     
       addParams:    
         max_tokens: 20480
 
