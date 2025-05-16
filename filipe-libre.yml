@@ -110,7 +110,6 @@ endpoints:
       summaryModel: "current_model"
       forcePrompt: false      
       titleModel: 'google/gemini-2.0-flash-001'
-      dropParams: ['stop']
       iconURL: https://unpkg.com/@lobehub/icons-static-svg@latest/icons/openai.svg
 
     - name: "Deepseek"
@@ -131,7 +130,6 @@ endpoints:
       summaryModel: "current_model"
       forcePrompt: false      
       titleModel: 'google/gemini-2.0-flash-001'
-      dropParams: ['stop']
 
     - name: "Gemini"
       apiKey: "dummy"
@@ -153,7 +151,6 @@ endpoints:
       summaryModel: "current_model"
       forcePrompt: false      
       titleModel: 'google/gemini-2.0-flash-001'
-      dropParams: ['stop']
       iconURL: https://unpkg.com/@lobehub/icons-static-svg@1.45.0/icons/gemini-color.svg
 
 
@@ -175,7 +172,6 @@ endpoints:
       summaryModel: "current_model"
       forcePrompt: false      
       titleModel: 'google/gemini-2.0-flash-001'
-      dropParams: ['stop']
       iconURL: https://unpkg.com/@lobehub/icons-static-svg@1.45.0/icons/anthropic.svg
 
     - name: "Mais modelos"
@@ -320,7 +316,6 @@ endpoints:
       summaryModel: "current_model"
       forcePrompt: false      
       titleModel: 'google/gemini-2.0-flash-001'
-      dropParams: ['stop']     
       addParams:    
         max_tokens: 20480
 
