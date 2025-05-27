@@ -79,7 +79,12 @@ endpoints:
     disableBuilder: false
     allowedProviders:
       - openAI
-    capabilities:
+      - ChatGPT #custom endpoint
+      - Deepseek #custom endpoint
+      - Gemini #custom endpoint
+      - Anthropic #custom endpoint
+      - Mais modelos #custom endpoint
+    capabilities: 
       - "file_search"
       - "actions"
       - "tools"
