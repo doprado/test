@@ -438,7 +438,7 @@ modelSpecs:
       iconURL: "https://unpkg.com/@lobehub/icons-static-svg@1.46.0/icons/perplexity.svg"
       preset:
         endpoint: "Perplexity"
-        modelLabel: "Sonar"
+        modelLabel: "Perplexity"
         greeting: "Perplexity Sonar foi projetado para ajudar com uma ampla gama de tarefas, desde pesquisa acadêmica até exploração de conhecimento geral"
         append_current_datetime: true     
 
