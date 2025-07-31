@@ -133,7 +133,7 @@ endpoints:
       summarize: false
       summaryModel: "current_model"
       forcePrompt: false      
-      titleModel: 'google/gemini-2.0-flash-001'
+      titleModel: 'google/gemini-2.5-flash-lite'
     
     - name: "Perplexity"
       apiKey: "${OPENROUTER_KEY}"
@@ -148,7 +148,7 @@ endpoints:
       summarize: false
       summaryModel: "current_model"
       forcePrompt: false      
-      titleModel: 'google/gemini-2.5-flash-lite-preview-06-17'
+      titleModel: 'google/gemini-2.5-flash-lite'
       dropParams: ['stop']
 
     - name: "Gemini"
@@ -434,7 +434,7 @@ modelSpecs:
         endpoint: "Perplexity"
         modelLabel: "Perplexity"
         greeting: "Perplexity Sonar foi projetado para ajudar com uma ampla gama de tarefas, desde pesquisa acadêmica até exploração de conhecimento geral"
-        promptPrefix: "Additional Rules: 1. Always print the full URL in brackets after the Cititation Number instead of just the Citation Number; 2. Ensure responses are concise and relevant; 3. Always cite the sources of your web search; 4 - At the end of the content, place all the links used in the references in list format."
+        promptPrefix: "Additional Rules: 1. Always print the full URL instead of just the Citation Number; 2. Ensure responses are concise and relevant; 3. Always cite the sources of your web search; 4 - At the end of the content, place all the links used in the references in list format."
         append_current_datetime: true     
 
 
