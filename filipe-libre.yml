@@ -122,9 +122,6 @@ endpoints:
     - name: "Deepseek"
       apiKey: "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"
       baseURL: "https://gateway.ai.cloudflare.com/v1/7b4661e07bba4890ceb6c5e83981fb36/siachat/openrouter"
-      headers:
-        Authorization: "Bearer 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"
-        x-api-key: "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"
       models:
        default: 
         - "deepseek/deepseek-chat"
