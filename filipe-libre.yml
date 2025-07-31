@@ -136,13 +136,10 @@ endpoints:
       titleModel: 'google/gemini-2.0-flash-001'
     
     - name: "Perplexity"
-      apiKey: "dummy"
-      baseURL: "${PORTKEY_GATEWAY_URL}"
+      apiKey: "${OPENROUTER_KEY}"
+      baseURL: "https://gateway.ai.cloudflare.com/v1/7b4661e07bba4890ceb6c5e83981fb36/siachat/openrouter"
       headers:
-        x-portkey-api-key: "${PORTKEY_API_KEY}"
-        x-portkey-config: "pc-sia-pr-620efe"
-        x-portkey-debug: "false"
-        x-portkey-metadata: '{"_user": "${USER_EMAIL}"}'
+        x-metadata: '{"_user": "${USER_EMAIL}"}'
       models:
        default: 
         - "perplexity/sonar"
