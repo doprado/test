@@ -96,12 +96,12 @@ endpoints:
   custom:    
     - name: "ChatGPT"
       apiKey: "dummy"
-      baseURL: "${PORTKEY_GATEWAY_URL}"
+      baseURL: "https://gateway.ai.cloudflare.com/v1/7b4661e07bba4890ceb6c5e83981fb36/siachat/openrouter"
       headers:
-        x-portkey-api-key: "${PORTKEY_API_KEY}"
-        x-portkey-config: "pc-sia-de-654560"
-        x-portkey-debug: "false"
-        x-portkey-metadata: '{"_user": "${USER_EMAIL}"}'
+        # x-portkey-api-key: "${PORTKEY_API_KEY}"
+        # x-portkey-config: "pc-sia-de-654560"
+        # x-portkey-debug: "false"
+        # x-portkey-metadata: '{"_user": "${USER_EMAIL}"}'
       models:
         default: 
           - "openai/gpt-4o-mini"
