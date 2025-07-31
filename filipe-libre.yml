@@ -116,7 +116,7 @@ endpoints:
       summarize: false
       summaryModel: "current_model"
       forcePrompt: false      
-      titleModel: 'google/gemini-2.0-flash-001'
+      titleModel: 'google/gemini-2.5-flash-lite'
       iconURL: https://unpkg.com/@lobehub/icons-static-svg@latest/icons/openai.svg
 
     - name: "Deepseek"
@@ -161,16 +161,15 @@ endpoints:
         x-portkey-debug: "false"
       models:
        default: 
-        - "google/gemini-2.5-flash-preview"
-        - "google/gemini-2.5-flash-preview:thinking"
-        - "google/gemini-pro-1.5"
+        - "google/gemini-2.5-flash-lite"
+        - "google/gemini-2.5-flash:thinking"
         - "google/gemma-3-27b-it"
        fetch: false
       titleConvo: true      
       summarize: false
       summaryModel: "current_model"
       forcePrompt: false      
-      titleModel: 'google/gemini-2.0-flash-001'
+      titleModel: 'google/gemini-2.5-flash-lite'
       iconURL: https://unpkg.com/@lobehub/icons-static-svg@1.45.0/icons/gemini-color.svg
 
 
@@ -191,7 +190,7 @@ endpoints:
       summarize: false
       summaryModel: "current_model"
       forcePrompt: false      
-      titleModel: 'google/gemini-2.0-flash-001'
+      titleModel: 'google/gemini-2.5-flash-lite'
       iconURL: https://unpkg.com/@lobehub/icons-static-svg@1.45.0/icons/anthropic.svg
 
     - name: "Mais modelos"
@@ -246,7 +245,7 @@ endpoints:
         - "mistralai/mistral-saba"
         - "meta-llama/llama-guard-3-8b"
         - "deepseek/deepseek-r1-distill-llama-8b"
-        - "google/gemini-2.0-flash-001"
+        - "google/gemini-2.5-flash-lite"
         - "qwen/qwen-vl-plus"
         - "aion-labs/aion-rp-llama-3.1-8b"
         - "qwen/qwen-turbo"
@@ -335,7 +334,7 @@ endpoints:
       summarize: false
       summaryModel: "current_model"
       forcePrompt: false      
-      titleModel: 'google/gemini-2.0-flash-001'
+      titleModel: 'google/gemini-2.5-flash-lite'
       addParams:    
         max_tokens: 20480
 
@@ -403,7 +402,7 @@ modelSpecs:
         greeting: "Este o modelo é excelente para maioria das tarefas"
         append_current_datetime: true
 
-    - name: "google/gemini-2.5-flash-preview"
+    - name: "google/gemini-2.5-flash-lite"
       label: "Gemini 2.5 Flash"
       default: false
       description: "O modelo mais popular do Google"
