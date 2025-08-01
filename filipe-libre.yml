@@ -123,7 +123,7 @@ endpoints:
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://gateway.ai.cloudflare.com/v1/7b4661e07bba4890ceb6c5e83981fb36/siachat/openrouter"
       headers:
-        authorization: 'Bearer ${OPENROUTER_KEY}'
+        cf-aig-metadata: '{"user": "${USER_EMAIL}"}'
       models:
        default: 
         - "deepseek/deepseek-chat"
