@@ -123,7 +123,7 @@ endpoints:
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://gateway.ai.cloudflare.com/v1/7b4661e07bba4890ceb6c5e83981fb36/siachat/openrouter"
       headers:
-        cf-aig-metadata: '{"_user": "${USER_EMAIL}"}'
+        cf-aig-metadata: '{"_user": "{{LIBRECHAT_USER_EMAIL}}"}'
       models:
        default: 
         - "deepseek/deepseek-chat"
@@ -139,7 +139,7 @@ endpoints:
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://gateway.ai.cloudflare.com/v1/7b4661e07bba4890ceb6c5e83981fb36/siachat/openrouter"
       headers:
-        cf-aig-metadata: '{"_user": "${USER_EMAIL}"}'
+        cf-aig-metadata: '{"user": "{{LIBRECHAT_USER_EMAIL}}"}'
       models:
        default: 
         - "perplexity/sonar"
